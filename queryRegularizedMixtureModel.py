@@ -168,7 +168,7 @@ if __name__=='__main__':
     parser.add_argument('secondPassResultDir', help='the second pass result directory')
     parser.add_argument('-n', '--pseudoDocNum', help='the number of pseudo relevant docs', type=int, default=10)
     parser.add_argument('-m', '--mu', help='the Dirichlet smoothing parameter', type=float, default=1000)
-    parser.add_argument('-e', '--queryExpansion', help='the query expansion list')
+    parser.add_argument('-e', '--queryExpansion', help='the query expansion list, no expansion just ignore')
     parser.add_argument('-w', '--expansionWeight', help='the query expansion weight', type=float, default=0.2)
     args = parser.parse_args()
 

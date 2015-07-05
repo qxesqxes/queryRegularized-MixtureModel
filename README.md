@@ -21,26 +21,3 @@ Usage
 -------
 python queryRegularizedMixtureModel.py -h
 
-usage: queryRegularizedMixtureModel.py [-h] [-n PSEUDODOCNUM] [-m MU]
-[-e QUERYEXPANSION]
-[-w EXPANSIONWEIGHT]
-queryList corpusPath firstPassResultDir
-secondPassResultDir
-
-positional arguments:
-queryList             the word-segmented query list.
-corpusPath            the path of corpus including all documents
-firstPassResultDir    the first pass result directory
-secondPassResultDir   the second pass result directory
-
-optional arguments:
--h, --help            show this help message and exit
--n PSEUDODOCNUM, --pseudoDocNum PSEUDODOCNUM
-the number of pseudo relevant docs
--m MU, --mu MU        the Dirichlet smoothing parameter
--e QUERYEXPANSION, --queryExpansion QUERYEXPANSION
-the query expansion list, no expansion just ignore
--w EXPANSIONWEIGHT, --expansionWeight EXPANSIONWEIGHT
-the query expansion weight
-
-

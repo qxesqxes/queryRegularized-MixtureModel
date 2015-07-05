@@ -1,3 +1,6 @@
+#TODO random walk
+#TODO cosine similarity
+
 import numpy as np
 from Archive import Archive
 import argparse, os
@@ -123,7 +126,6 @@ class QueryRegularizedMixtureModel:
             numerator += self.mu * self.queryLMArray[i]
             self.RelLMArray[i] = numerator / denominator
 
-    # TODO: your output format
     def dumpRetrievalResults(self, doc_score, outdir):
         fo = open('%s/%i' % (outdir, self.qid), 'w')
         fo.write('\n'.join(['%i 0 %s 0 %.6f %s' % (self.qid, pair[0], pair[1], 'EXP') for pair in doc_score]))
